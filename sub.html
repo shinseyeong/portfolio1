@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SoonSoo, 순수조명 Sub Page </title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/sub.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+  <script>
+
+    $(function () {
+
+      $.ajax({
+
+        url: "json/test_1.json",
+
+        dataType: "json",
+
+        success: function (data) {
+
+          if (data.length > 0) {
+
+
+
+            for (var i in data) {
+
+
+              $(".moving1").eq(i).find("img").attr("src", data[i].url);
+
+
+
+              $(".t").eq(i).text(data[i].title);
+
+              $(".m ").eq(i).text(data[i].subtitle);
+
+              $(".w ").eq(i).text(data[i].price);
+
+              $(".rec-box > span").text(data[0, 6, 7].new);
+
+              $(".re1").text(data[2, 4, 7].use);
+
+              $(".box1 > span").text(data[8, 9, 10, 12, 15].use)
+
+            }
+
+          }
+
+        }
+
+      });
+
+
+    });
+
+
+  </script>
+
+<script>
+
+  $(function () {
+
+    $('.allview').mouseover(function () {
+
+      $('.ul-all').stop().slideDown();
+
+    }).mouseout(function () {
+
+      $('.ul-all').stop().slideUp();
+
+    });
+
+  });
+
+
+
+</script>
+
+<script>
+
+$(function(){
+    $('#header-nav > nav > ul > li').hover(function(){
+      $(this).find('.sub').stop().slideToggle();
+    });
+  });
+
+  
+  $('#header-nav > nav > ul > li').mouseover(function(){
+      $(this).find('.sub').stop().show(fast);
+  }).mouseout(function(){
+      $('.sub').stop().hide(fast);
+  
+});
+
+
+
+
+</script>
+</head>
+
+<body>
+
+  <header>
+
+    <div id="wrap">
+
+      <div id="login">
+
+        <ul>
+
+          <li><a href="index.html" target="_self">회원가입</a></li>
+
+          <li>ㅣ</li>
+
+          <li><a href="index.html" target="_self">로그인</a></li>
+
+          <li>ㅣ</li>
+
+          <li><a href="index.html" target="_self">장바구니</a></li>
+
+          <li>ㅣ</li>
+
+          <li><a href="index.html" target="_self">주문조회</a></li>
+
+          <li>ㅣ</li>
+
+          <li><a href="index.html" target="_self">마이페이지</a></li>
+
+          <li>ㅣ</li>
+
+        </ul>
+      </div>
+
+      <div id="comunity">
+        <ul>
+          <li>ㅣ</li>
+
+          <li><a href="index.html" target="_self">고객센터</a></li>
+
+          <li>ㅣ</li>
+
+          <li><a href="index.html" target="_self">커뮤니티</a></li>
+        </ul>
+
+      </div>
+
+
+
+    </div>
+
+
+    <div id="header-middle">
+      <div id="logo">
+
+        <a href="index.html"><img src="img/logo.jpg" alt="순수조명로고"></a>
+
+      </div>
+
+
+      <div id="search">
+
+        <form>
+          <input type="text" value="이름">
+          <a href="sub.html"><img src="img/search.jpg" alt="돋보기사진"></a>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div id="header-nav">
+      <nav>
+
+        <ul>
+          <div class="allview">
+            <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/menu-64.png" alt="전체 보기 버튼"></a>
+            <ul class="ul-all">
+              <div class="allboard-left">
+                <div class="all-left1">
+                  <div class="interior">
+                    <ul>
+                      <li><a href="#">인테리어</a></li>
+                      <hr>
+                      <li>단스탠스</li>
+                      <li>장스탠스</li>
+                      <li>무드등</li>
+                    </ul>
+                  </div>
+                  <div class="led">
+                    <li><a href="#">LED전구</a></li>
+                    <hr>
+                    <li>LED 전구</li>
+                    <li>에디슨전구 백열</li>
+                    <li>에디슨전구 필라멘트</li>
+                    <li>트리전구</li>
+                    <li>전구 부속품</li>
+                  </div>
+                  <div class="room">
+                    <li><a href="#">방등</a></li>
+                    <hr>
+                    <li>LED 방등</li>
+                    <li>디자인 방등</li>
+                    <li>아이방 조명</li>
+                    <li>우드방등</li>
+                  </div>
+                  <div class="livingroom">
+                    <li><a href="#">거실등</a></li>
+                    <hr>
+                    <li>20평형</li>
+                    <li>30평형</li>
+                    <li>40평형 이상</li>
+                    <li>디자인 거실등</li>
+                  </div>
+                </div>
+                <div class="all-left2">
+                  <div class="kichenroom">
+                    <li><a href="#">주방등</a></li>
+                    <hr>
+                  </div>
+
+                  <div class="table">
+                    <li><a href="#">식탁등</a></li>
+                    <hr>
+                    <li>인테리어조명</li>
+                    <li>키즈펜던트</li>
+                    <li>우드펜던트</li>
+                    <li>샹들리에</li>
+                  </div>
+                  <div class="rail">
+                    <li><a href="#">레일조명</a></li>
+                    <hr>
+                    <li>레일 부속</li>
+                    <li>레일 개별</li>
+                    <li>레일 세트</li>
+                  </div>
+                  <div class="outlight">
+                    <li><a href="#">현관,베란다</a></li>
+                    <hr>
+                    <li>현관 센서등</li>
+                    <li>베란다 직부등</li>
+                  </div>
+                </div>
+                <div class="all-left3">
+                  <div class="bath">
+                    <li><a href="#">욕실,매입,간접</a></li>
+                    <hr>
+                    <li>욕실등</li>
+                    <li>매입등</li>
+                    <li>간접조명</li>
+                  </div>
+                  <div class="wall">
+                    <li><a href="#">벽등</a></li>
+                    <hr>
+                    <li>실내벽등</li>
+                    <li>실외벽등</li>
+                  </div>
+                  <div class="etc">
+                    <li><a href="#">기타</a></li>
+                    <hr>
+                    <li>조명 부속품</li>
+                    <li>3구 모듈</li>
+                    <li>정원등</li>
+                    <li>간판·공장등</li>
+                    <li>사무실조명</li>
+                    <li>산업조명</li>
+                  </div>
+                  <div class="sun">
+                    <li><a href="#">태양열조명</a></li>
+                    <hr>
+                  </div>
+                </div>
+                <div class="all-left4">
+                  <div class="switch">
+                    <li><a href="#">콘센트/스위치</a></li>
+                    <hr>
+                    <li>DIY 콘센트</li>
+                    <li>DIY 스위치</li>
+                    <li>DIY 플러그</li>
+                    <li>멀티탭</li>
+                    <li>전기릴선</li>
+                    <li>럭스</li>
+                    <li>비비엘</li>
+                    <li>디아테</li>
+                    <li>보노</li>
+                    <li>베토 화이트</li>
+                    <li>베토 실버</li>
+                    <li>베토 블랙</li>
+                    <li>아마루스 골드</li>
+                    <li>아마루스 실버</li>
+                    <li>아마루스 블랙</li>
+                  </div>
+                  <div class="electronic">
+                    <li><a href="#">전기자재</a></li>
+                    <hr>
+                    <li>전선</li>
+                    <li>전선 연결</li>
+                    <li>전선 고정</li>
+                    <li>전선보호관</li>
+                    <li>차단기</li>
+                    <li>BOX</li>
+                    <li>통신자재</li>
+                    <li>잡자재</li>
+                  </div>
+                  <div class="elec-item">
+                    <li><a href="#">전기용품</a></li>
+                    <hr>
+                    <li>횐풍기</li>
+                  </div>
+                  <div class="tool">
+                    <li><a href="#">공구</a></li>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+              <div class="allboard-right">
+                <div class="all-right1">
+                  <ul>
+                    <li><a href="#">COMMUNITY</a></li>
+                    <hr>
+                    <li>ABOUT</li>
+                    <li>이벤트</li>
+                    <li>조명 컨셉</li>
+                    <li>조명 컨설팅</li>
+                    <li>순수 구매 가이드</li>
+                    <li>셀프 설치</li>
+                    <li>설치 신청</li>
+                    <li>전문가 후기</li>
+                    <li>구매 후기</li>
+                    <li>A/S 접수</li>
+                    <li>자주 묻는 질문</li>
+                    <li>문의 게시판</li>
+                    <li>이벤트 참여 게시판</li>
+                    <li>기업회원</li>
+                  </ul>
+                </div>
+                <div class="all-right2">
+                  <ul>
+                    <li><a href="#">MY PAGE</a></li>
+                    <hr>
+                    <li>정보수정</li>
+                    <li>장바구니</li>
+                    <li>주문내역 조회</li>
+                    <li>관심 상품</li>
+                    <li>게시물 관리</li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+
+
+
+          <li><a href="sub.html" target="_self">인테리어</a>
+            <ul class="sub">
+              <li><a href="#">단스탠스</a></li>
+              <li><a href="#">장스탠스</a></li>
+              <li><a href="#">무드등</a></li>
+            </ul>
+          </li>
+          <li><a href="sub.html" target="_self">LED전구</a>
+            <ul class="sub">
+              <li><a href="#">LED 전구</a></li>
+              <li><a href="#">에디슨전구 백열</a></li>
+              <li><a href="#">에디슨전구 필라멘트</a></li>
+              <li><a href="#">트리전구</a></li>
+              <li><a href="#">전구 부속품</a></li>
+            </ul>
+          </li>
+          <li><a href="sub.html" target="_self">방등</a>
+            <ul class="sub">
+              <li><a href="#">LED 방등</a></li>
+              <li><a href="#">디자인 방등</a></li>
+              <li><a href="#">아이방 조명</a></li>
+              <li><a href="#">우드방등</a></li>
+            </ul>
+          </li>
+          <li><a href="sub.html" target="_self">거실등</a>
+            <ul class="sub">
+              <li><a href="#">20평형</a></li>
+              <li><a href="#">30평형</a></li>
+              <li><a href="#">40평형 이상</a></li>
+              <li><a href="#">디자인 거실등</a></li>
+            </ul>
+          </li>
+
+          <li><a href="sub.html" target="_self">식탁등</a>
+            <ul class="sub">
+              <li><a href="#">인테리어조명</a></li>
+              <li><a href="#">키즈펜던트</a></li>
+              <li><a href="#">우드펜던트</a></li>
+              <li><a href="#">샹들리에</a></li>
+            </ul>
+          </li>
+
+          <li><a href="sub.html" target="_self">레일조명</a>
+            <ul class="sub">
+              <li><a href="#">레일 부속</a></li>
+              <li><a href="#">레일 개별</a></li>
+              <li><a href="#">레일 세트</a></li>
+            </ul>
+          </li>
+          <li><a href="sub.html" target="_self">관 베란다</a>
+            <ul class="sub">
+              <li><a href="#">현관 센서등</a></li>
+              <li><a href="#">베란다 직부등</a></li>
+            </ul>
+          </li>
+          <li><a href="sub.html" target="_self">욕실 베일</a>
+            <ul class="sub">
+              <li><a href="#">욕실등</a></li>
+              <li><a href="#">매입등</a></li>
+              <li><a href="#">간접조명</a></li>
+            </ul>
+          </li>
+          <li><a href="sub.html" target="_self">벽등</a>
+            <ul class="sub">
+              <li><a href="#">실내벽등</a></li>
+              <li><a href="#">실외벽등</a></li>
+            </ul>
+          </li>
+          <li><a href="sub.html" target="_self">태양열조명</a>
+          </li>
+          <li><a href="sub.html" target="_self">콘텐츠 스위치</a>
+            <ul class="sub">
+              <li><a href="#">DIY 콘센트</a></li>
+              <li><a href="#">DIY 스위치</a></li>
+              <li><a href="#">DIY 플러그</a></li>
+              <li><a href="#">멀티탭</a></li>
+              <li><a href="#">전기릴선</a></li>
+              <li><a href="#">럭스</a></li>
+              <li><a href="#">비비엘</a></li>
+              <li><a href="#">디아테</a></li>
+              <li><a href="#">보노</a></li>
+              <li><a href="#">베토 화이트</a></li>
+              <li><a href="#">베토 실버</a></li>
+              <li><a href="#">베토 블랙</a></li>
+              <li><a href="#">아마루스 골드</a></li>
+              <li><a href="#">아마루스 실버</a></li>
+              <li><a href="#">아마루스 블랙</a></li>
+            </ul>
+          </li>
+          <li><a href="sub.html" target="_self">전기자재</a>
+            <ul class="sub">
+              <li><a href="#">전선</a></li>
+              <li><a href="#">전선 연결</a></li>
+              <li><a href="#">전선 고정</a></li>
+              <li><a href="#">전선보호관</a></li>
+              <li><a href="#">차단기</a></li>
+              <li><a href="#">BOX</a></li>
+              <li><a href="#">통신자재</a></li>
+              <li><a href="#">잡자재</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+
+
+
+
+
+
+    </div>
+
+
+  </header>
+  <div id="sub">
+    <div id="sub-main-top">
+      <h3>홈 > 인테리어 </h3>
+
+      <div id="left-sub">
+
+        <div id="productbox">
+          <img src="img/subtop1.jpg" alt="상위큰이미지" id="cimg" class="w1">
+          <div id="product">
+            <ul>
+              <li><img src="img/subtop1.jpg" alt="상위이미지1"></li>
+
+              <li><img src="img/subtop2.jpg" alt="상위이미지2"></li>
+
+              <li><img src="img/subtop3.jpg" alt="상위이미지3"></li>
+
+              <li><img src="img/subtop4.jpg" alt="상위이미지4"></li>
+
+              <li><img src="img/subtop5.jpg" alt="상위이미지5"></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <script>
+          $(document).ready(function () {
+            $("#product li:first-child").mouseover(function () {
+              $("#cimg").attr("src", "https://soonsumall.com/web/product/small/202111/18916f9f76f2652e5096c139f4ecba6b.jpg");
+            });
+            $("#product li:nth-child(2)").mouseover(function () {
+              $("#cimg").attr("src", "https://soonsumall.com/web/product/extra/small/202111/8546adb0d69ef661f5a78b2c86fab5c4.jpg");
+            });
+            $("#product li:nth-child(3)").mouseover(function () {
+              $("#cimg").attr("src", "https://soonsumall.com/web/product/extra/small/202111/2c088b18fc84530152556ab80a76e37b.jpg");
+            });
+            $("#product li:nth-child(4)").mouseover(function () {
+              $("#cimg").attr("src", "https://soonsumall.com/web/product/extra/small/202111/6fe4986ea51c8067e5afd05207c07923.jpg");
+            });
+            $("#product li:nth-child(5)").mouseover(function () {
+              $("#cimg").attr("src", "https://soonsumall.com/web/product/extra/small/202111/17b8f89510b2cf87320b91ad59d0beef.jpg");
+            });
+          });
+        </script>
+
+
+
+
+
+
+      </div>
+
+
+
+
+      <div id="right-sub">
+        <div id="context">
+
+          <h3>문라이트 무드등</h3>
+          <h5>신비로운 공간, 나만의 우주</h5>
+
+          <h4>9,900원</h4>
+
+          <table>
+            <tr>
+              <td>브랜드</td>
+              <td>순수조명</td>
+            </tr>
+            <tr>
+              <td>제조사</td>
+              <td>순수조명</td>
+            </tr>
+            <tr>
+              <td>적립금</td>
+              <td>100원</td>
+            </tr>
+            <tr>
+              <td>배송비</td>
+              <td>3000원</td>
+            </tr>
+
+
+            <tr>
+              <td>타입선택</td>
+              <td>
+
+                <select>
+                  <option>[필수]옵션을 선택해주세요</option>
+                  <option>------------</option>
+                  <option>달</option>
+                  <option>지구</option>
+                  <option>목성</option>
+                </select>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td>사이즈선택</td>
+              <td>
+
+                <select>
+                  <option>[필수]옵션을 선택해주세요.</option>
+                  <option>------------</option>
+                  <option>소(10cm)</option>
+                  <option>중(15cm)</option>
+                  <option>대(20cm)</option>
+                </select>
+
+              </td>
+            </tr>
+
+          </table>
+
+          <div id="price">
+            <h4>상품명</h4>
+
+            <ul>
+
+              <li>ㅣ</li>
+              <li>수량</li>
+              <li>ㅣ</li>
+              <li>가격</li>
+
+            </ul>
+
+            <hr>
+
+            <div id="quantity">
+
+              <h5>0원</h5>
+              <hr>
+              <h6>(최소 주문 수량 1개 이상)</h6>
+
+            </div>
+
+            <div id="total">
+
+              <button>바로구매</button>
+              <button>장바구니</button>
+              <button>관심상품</button>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="sub-middle">
+
+      <h3>추천 조명 상품</h3>
+
+      <div class="sub-middle-box">
+        <div class="sub-middle-img">
+          <img src="https://soonsumall.com/web/product/tiny/202110/020f232c645ca30d0be6f23db5f188ba.jpg" alt="추천조명이미지1">
+        </div>
+        <span>순수조명</span>
+        <p class="t">루아 1등 식탁</p>
+
+        <p class="m">모던 클래식 스타일의 식탁등</p>
+        <br>
+        <p class="w">50,000원</p>
+
+
+      </div>
+
+      <div class="sub-middle-box">
+        <div class="sub-middle-img">
+          <img src="https://soonsumall.com/web/product/tiny/202110/11d2fb25220ec122f16aa2101d597d12.jpg" alt="추천조명이미지2">
+        </div>
+        <span>순수조명</span>
+        <p class="t">엘사 12등 식탁등</p>
+
+        <p class="m">크리스탈이 모여 만들어진 꽃다발</p>
+        <br>
+        <p class="w">224,000원</p>
+
+
+      </div>
+
+      <div class="sub-middle-box">
+        <div class="sub-middle-img">
+          <img src="https://soonsumall.com/web/product/tiny/202111/cd09406d7427b0664c304571a5f9e6cc.jpg" alt="추천조명이미지3">
+        </div>
+        <span>순수조명</span>
+        <p class="t">페페로 LED 식탁등 30W</p>
+
+        <p class="m">우리집 식탁, 고급스러운 라인</p>
+        <br>
+        <p class="w">165,000원</p>
+
+
+      </div>
+
+      <div class="sub-middle-box">
+        <div class="sub-middle-img">
+          <img src="https://soonsumall.com/web/product/tiny/202110/d6a221fe5e8b0f46bae0245778c7bd8c.jpg" alt="추천조명이미지4">
+        </div>
+
+
+        <span>순수조명</span>
+        <p class="t">상투스 크리스탈조명 식탁등</p>
+
+        <p class="m">럭셔리한 공간과 어울리는 상투스 식탁등</p>
+        <br>
+        <p class="w">211,000원</p>
+
+      </div>
+
+
+
+
+    </div>
+
+    <div id="maintop">
+
+      <ul>
+       <li>상품상세정보</li>
+          
+        <li><a href="#delivery">배송안내</a></li>
+          
+        <li><a href="#review">상품후기</a></li>
+          
+        <li><a href="#question">상품문의</a></li>
+      </ul>
+      
+      <div id="sub-main">
+      
+
+          <div id="sub-main-img1">
+            <img src="img/submaintop.jpg" alt="서브이미지1">
+
+            <p class="b">USB충전식 무드등/스탠드</p>
+            <p class="s">문라이트 무드등1W</p>
+
+
+            <div id="submainimg1-2">
+
+              <img src="img/submainspec.JPG" alt="서브이미지1-2">
+            </div>
+
+            <div id="sub-main-img2">
+
+              <img src="img/submain1.jpg" alt="서브이미지2">
+
+              <div id="subimgbox">
+
+                <div class="sub-main-img2-2">
+                  <img src="img/submain2.JPG" alt="서브이미지2-2">
+                </div>
+
+                <div class="sub-main-img2-2">
+                  <img src="img/submain3.JPG" alt="서브이미지2-3">
+                </div>
+              </div>
+
+            </div>
+
+            <div id="sub-main-img3">
+              <p class="h">EMOTIONAL DESIGN :: <span>MOON LIGHT</span></p>
+              <p class="l">신비로운 공간, 나만의 우주</p>
+              <img src="img/submain4.JPG" alt="서브이미지3">
+
+              <p class="b">정교하게 표현된 표면</p>
+              <p class="s">3D프린터를 통해 제작된 문라이트 무드등은<br>
+                육지와 바다의 경계를 입체감있게 표현하여<br>
+                내 손으로 지구를 만지는 듯한 감성을 전달해 줍니다.</p>
+
+            </div>
+
+            <div id="sub-main-img4">
+              <img src="img/submain7.JPG" alt="서브이미지4">
+              <img src="img/submain8.JPG" alt="서브이미지4-1">
+            </div>
+
+            <div id="sub-main-img5">
+              <div id="subimgbox3">
+                <img src="img/submain-design1.JPG" alt="서브이미지5">
+                <img src="img/submain-design2.JPG" alt="서브이미지5-1">
+                <p class="b">취향따라 선택하는 3가지<br>
+                  디자인 & 사이즈</p>
+                <p class="s">손안에 들어오는 앙증맞은 크기를 원한다면 사이즈를,<br>
+                  공간에 몽환적인 분위기를 연출하고 싶다면 중 or 대 사이즈를 추천합니다.<br>
+                  달, 목성, 지구 취향에 맞게 선택하여 공간의 분위기를 느껴보세요.</p>
+              </div>
+
+              <div id="sub-main-img6">
+
+              <img src="img/submain-size.JPG" alt="서브이미지6">
+            </div>
+
+          </div>
+
+
+
+          <div id="delivery">
+
+
+            
+
+            <ul>
+               <li><a href="#sub-main">상품상세정보</a></li>
+              
+               <li>배송안내</li>
+                
+              <li><a href="#review">상품후기</a></li>
+                
+              <li><a href="#question">상품문의</a></li>
+            </ul>
+            
+
+           
+            <div id="deliverydetail">
+              <ul>
+                <li>배송료 3000원~ 제주도 및 도서산간지역 4000원추가</li>
+                <li>배송조회는 택배사 전산 입력 후 가능함으로 오후 6시 이후에 조회 가능합니다.</li>
+                <li>평균 배송일은 익일 !~3일 이내입니다.</li>
+                <li>단, 주말 및 공휴일은 배송기간에서 제외되며 택배사 사정에 의해 배송지연될 수 있습니다.</li>
+                <li>주문수량, 부피, 무게, 풀고지로 인하여 각각 포장되어 출고될 수 있습니다.</li>
+                <li>같은 날 출고되어도 배송 도착 날짜와 시간이 다를 수 있습니다.</li>
+                <li>제품의 도착날짜는 보장하지 않습니다.</li>
+                <li>이에 반드시 제품수령 후 제품의 이상유무를 확인하시고 설치 일정을 잡아주세요.</li>
+                <li>네이버페이 주문건은 자동수거(교환/반품)에약이 불가합니다.</li>
+                <li>반드시 카카오톡 또는 고객센터 문의 게시판으로 연락주세요.</li>
+                <li>교환과 반품이 가능한 경우: 상품을 받으신 날로부터 7일이내 접수된 상품</li>
+                <li>교환및 반품이 불가능한 경우:</li>
+                <li> -상품을 사용한경우</li>
+                <li> -상품 받으신 날부터 7일이 경과된 경우 </li>
+                <li> -전선, 파이프 등 절단 상품</li>
+                <li> -설치 불량으로 인한 고장 (실내 제품을 실외 사용, 외부 설치시 방수테이프 미사용,전자식 스위치로 인한 합선 및 누전)</li>
+                <li> -상품의 박스가 훼손되어 재판매가 어려운 경우</li>
+                <li> -교환 및 반품시 포장불량으로 인한 제품 및 박스가 훼손된 경우</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="review">
+
+            
+
+              <ul>
+                <li><a href="#sub-main">상품상세정보</a></li>
+                
+                <li><a href="#delivery">배송안내</a></li>
+                
+                <li>상품후기</li>
+                
+                <li><a href="#question">상품문의</a></li>
+              </ul>
+            
+            <div id="review-tablebox">
+
+              <button>리뷰 작성하기</button>
+              <table>
+                <tr>
+                  <th>5</th>
+                  <td><a href="index.html" target="_self">조명을 안 킬때도 너무 이뻐요.</a></td>
+                  <td>이지은</td>
+                  <td>2023.02.28</td>
+                  <td>답변완료</td>
+                </tr>
+
+                <tr>
+                  <th>4</th>
+                  <td><a href="index.html" target="_self">역시 순수조명에서 사길 잘 했어요.</a></td>
+                  <td>박진호</td>
+                  <td>2023.02.05</td>
+                  <td>답변완료</td>
+                </tr>
+
+
+                <tr>
+                  <th>3</th>
+                  <td><a href="index.html" target="_self">방 분위기가 달라졌어요~</a></td>
+                  <td>김하나</td>
+                  <td>2023.01.18</td>
+                  <td>답변완료</td>
+                </tr>
+
+
+                <tr>
+                  <th>2</th>
+                  <td><a href="index.html" target="_self">너무 예뻐요! 딸아이가 만족해해요.</a></td>
+                  <td>임효숙</td>
+                  <td>2022.12.28</td>
+                  <td>답변완료</td>
+                </tr>
+
+
+                <tr>
+                  <th>1</th>
+                  <td><a href="index.html" target="_self">만족합니다.</a></td>
+                  <td>신나리</td>
+                  <td>2022.12.15</td>
+                  <td>답변완료</td>
+                </tr>
+
+              </table>
+
+            </div>
+
+          </div>
+
+          <div id="question">
+
+           
+
+              <ul>
+                <li><a href="#sub-main">상품상세정보</a></li>
+                
+                <li><a href="#delivery">배송안내</a></li>            
+                <li><a href="#review">상품후기</a></li>          
+                <li>상품문의</li>
+              </ul>
+           
+
+
+               <button>상품문의 글쓰기</button>
+               <button>상품문의 전체보기</button>
+
+            <table>
+
+              <tr>
+                <th>5</th>
+                <td><a href="index.html" target="_self">인테리어설치문의</a></td>
+                <td>이경아</td>
+                <td>2023.02.26</td>
+                <td>답변완료</td>
+              </tr>
+
+              <tr>
+                <th>4</th>
+                <td><a href="index.html" target="_self">배송문의</a></td>
+                <td>김소희</td>
+                <td>2023.02.03</td>
+                <td>답변완료</td>
+              </tr>
+
+              <tr>
+                <th>3</th>
+                <td><a href="index.html" target="_self">전구불량</a></td>
+                <td>김현욱</td>
+                <td>2023.01.19</td>
+                <td>답변완료</td>
+              </tr>
+
+              <tr>
+                <th>2</th>
+                <td><a href="index.html" target="_self">램프문의</a></td>
+                <td>이대근</td>
+                <td>2023.01.08</td>
+                <td>답변완료</td>
+              </tr>
+
+              <tr>
+                <th>1</th>
+                <td><a href="index.html" target="_self">설치관련문의</a></td>
+                <td>박현숙</td>
+                <td>2022.12.19</td>
+                <td>답변완료</td>
+              </tr>
+
+            </table>
+
+
+          </div>
+
+          <div id="special">
+
+            <h4>Specification</h4>
+            <span>상품정보고시</span>
+
+            <table>
+              <tr>
+                <th>소재</th>
+                <td>PLA, 원목</td>
+              </tr>
+
+              <tr>
+                <th>색상</th>
+                <td>화이트</td>
+              </tr>
+
+              <tr>
+                <th>구성</th>
+                <td>본품+ 나무받침대[조립식] + USB연결 케이블</td>
+              </tr>
+
+              <tr>
+                <th>크기</th>
+                <td>[소]-지름 10cm [중]-지름 15cm [대]-지름 20cm</td>
+              </tr>
+
+              <tr>
+                <th>전구(LED)</th>
+                <td>LED 기판 1W [노란불/ 하얀불 색상 변환]</td>
+              </tr>
+
+              <tr>
+                <th>품질보증</th>
+                <td>구매일로부터 1년</td>
+              </tr>
+
+
+              <tr>
+                <th>제조국 </th>
+                <td>중국 OEM</td>
+              </tr>
+
+
+
+              <tr>
+                <th>판매원</th>
+                <td>미경전기</td>
+              </tr>
+
+
+
+            </table>
+          </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+    <footer>
+      <div id="center">
+        <div class="box3">
+          <h3>CUSTOMER CENTER</h3>
+          <hr>
+          <br>
+          <h4>1811-8168</h4>
+          <h6>-평일: 10:00~ 16:00 <br>
+            -고객센터 운영시간에 순차적으로 답변드리겠습니다.<br>
+            -토요일, 일요일, 공휴일휴무<br>
+            <br>
+            ※ 문의사항은 게시판 혹은 톡으로 남겨주세요.
+          </h6>
+          <br>
+          <br>
+          <a href="index.html" target="_self">
+            <h6>문의게시판</h6>
+          </a>
+          <a href="index.html" target="_self">
+            <h6>자주 묻는 질문</h6>
+          </a>
+
+        </div>
+        <div class="box3">
+          <h3>OTHER INFORMTION</h3>
+          <hr>
+          <br>
+          <h6>국민은행 00000-00-000000<br>
+            예금주 : ㅇㅇㅇ</h6>
+
+          <div id="minibox1">
+            <h6>※입금자명 불일치시 자동 입금이 확인이 되지 않습니다.</h6>
+          </div>
+          <h6>반품주소지<br>
+            -ㅇㅇ시 ㅇ구 ㅇㅇㅇ대로 000, 1층 순수조명 물류센터</h6>
+          <div id="minibox2">
+            <a href="#"><img src="img/car-icon.png" alt="배송차사진"></a>
+            <h6>내가 주문한 상품 배송조회 바로가기<br>
+              롯데택배 / 1588-0000</h6>
+          </div>
+
+        </div>
+        <div class="box3">
+          <div class="smallmenu">
+            <a href="#"><img src="img/order-icon.webp." alt="주문내역사진"></a>
+            <h5><a href="#">ORDER</a></h5>
+            <h6><a href="#">주문 내역</a></h6>
+          </div>
+          <div class="smallmenu">
+            <a href="#"><img src="img/profile-icon.webp" alt="개인정보사진"></a>
+            <h5><a href="#">PROPILE</a></h5>
+            <h6><a href="#">개인정보</a></h6>
+          </div>
+          <div class="smallmenu">
+            <a href="#"><img src="img/wish-icon.webp" alt="관심상품사진"></a>
+            <h5><a href="#">WISH LIST</a>
+            </h5>
+            <h6><a href="#">관심 상품</a></h6>
+          </div>
+          <div class="smallmenu">
+            <a href="#"><img src="img/mileage-icon.webp" alt="적립금사진"></a>
+            <h5><a href="#">MILEAGE</a></h5>
+            <h6><a href="#">적립금</a></h6>
+          </div>
+          <div class="smallmenu">
+            <a href="#"><img src="img/coupon-icon.webp" alt="쿠폰내역사진"></a>
+            <h5><a href="#">COUPON</a></h5>
+            <h6><a href="#">쿠폰 내역</a></h6>
+          </div>
+          <div class="smallmenu">
+            <a href="#"><img src="img/board-icon.webp" alt="내가쓴글사진"></a>
+            <h5><a href="#">MY BOARD</a></h5>
+            <h6><a href="#">내가 쓴 글</a></h6>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="footnav">
+
+        <ul>
+          <li><a href="#">회사소개</a></li>
+          <li>ㅣ</li>
+          <li><a href="#">이용약관</a></li>
+          <li>ㅣ</li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li>ㅣ</li>
+          <li><a href="#">이용안내</a></li>
+        </ul>
+
+      </div>
+
+      <div id="address">
+        <ul>
+          <li>법인형(상호):순수조명</li>
+          <li>ㅣ</li>
+          <li>대표자(성명):ㅇㅇㅇ</li>
+          <li>ㅣ</li>
+          <li>사업자 등록번호 안내:000-00-00000</li>
+          <br>
+          <li>ㅣ</li>
+          <li>통신판매업신고:제000-ㅇㅇㅇ구-0000호[사업자정보확인]</li>
+          <li>ㅣ</li>
+          <li>개인정보보호책임자:ㅇㅇㅇ</li>
+          <br>
+          <li>ㅣ</li>
+          <li>전화번호</li>
+          <li>ㅣ</li>
+          <li>팩스번호</li>
+          <li>ㅣ</li>
+          <li>주소:00000 ㅇㅇ시 ㅇㅇ동 ㅇㅇ로 00 1F,순수조명</li>
+          <br>
+          <li>Copyright © 순수조명. All rights reserved.</li>
+
+        </ul>
+
+        <div id="service">
+          <h5>구매안전(에스크로)서비스</h5>
+          <button>서비스가입사실확인</button><br>
+          <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서<br>
+            가입한 구매안전(에스크로) 서비스를 이용하실수 있습니다.</p>
+
+          <div id="service-img">
+            <a href="#"><img src="img/service1.png" alt="서비스보호1"></a>
+            <a href="#"><img src="img/service2.png" alt="서비스보호2"></a>
+          </div>
+
+
+          <div id="confirm">
+            <a href="#"><img src="img/confirm1.png" alt="인증1"></a>
+            <a href="#"><img src="img/confirm2.png" alt="인증2"></a>
+            <a href="#"><img src="img/confirm3.jpg" alt="인증3"></a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+    </footer>
+
+
+</body>
+
+</html>
